@@ -1,0 +1,117 @@
+
+
+
+
+
+.portfolio-area {
+    padding: 60px 0;
+
+    .portfolio__menu {
+        margin-bottom: 25px;
+        li {
+            padding: 8px 15px ;
+            margin: 0 7px;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: 0.3s;
+            &:hover {
+                background-color: $redColor;
+                color: #fff;
+            }
+        }
+        
+        li.filter-active  {
+            background-color: $redColor;
+            color: #fff;
+        }
+        
+    }
+    .portfolio-container {
+      
+        .portfolio-item  {
+            
+            margin-bottom: 30px;
+            .portfolio-wrap {
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-color: rgba(85, 98, 112, 0.5);
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    transition: all ease-in-out 0.3s;
+                    opacity: 0;
+                    z-index: 2;
+                }
+                img {
+                    transition: 0.3s;
+                }
+                .portfolio-info {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    padding: 20px;
+                    opacity: 0;
+                    transition: 0.3s;
+                    z-index: 3;
+
+                    h4 {
+                        font-size: 18px;
+                        color: #fff;
+                        font-weight: 600;
+                        margin-bottom: 5px;
+                    }
+                    p {
+                        color: rgba(255, 255, 255, 0.7);
+                        font-size: 14px;
+                        text-transform: uppercase;
+                         font-style: italic;
+                         margin: 0;
+                        
+                    }
+                    .portfolio-info__links {
+                        margin: 0;
+                        margin-top: 5px;
+                        a {
+                            color: rgba(255, 255, 255, 0.7);
+                            font-size: 24px;
+                            margin-right: 5px;
+                            transition: 0.3s;
+                            
+                            &:hover {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .portfolio-wrap {
+                    &::before {
+                        opacity: 1;
+                    }
+                    .portfolio-info {
+                        opacity: 1;
+
+                    }
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        
+
+    }
+}
+

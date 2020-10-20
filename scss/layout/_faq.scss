@@ -1,0 +1,39 @@
+
+
+.faq-area {
+    padding: 60px 0;
+
+    .row {
+        padding: 20px 0;
+        margin: 30px 0 !important;
+        // background-color: red;
+
+        .faq__question {
+            h4 {
+                position: relative;
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 500;
+                padding-left: 28px;
+                font-family: "Poppins", sans-serif;
+                padding-bottom: 10px;
+                svg {
+                    position: absolute;
+                    top: 5px;
+                    left: 0;
+                    color: #dee2e6;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .faq__answer {
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,27 @@
+
+// #client {
+
+// }
+
+.client-area {
+    padding: 15px 0;
+    background-color: #F8F9FA;
+    .client__item {
+        min-height: 68px;
+        // background-color: red;
+        img {
+            max-width: 45%;
+            transition: all 0.4s ease-in-out;
+            filter: grayscale(100);
+            
+        }
+        &:hover {
+
+            img {
+                transform: scale(1.2);
+                filter: grayscale(0);
+
+            }
+        }
+    }
+}

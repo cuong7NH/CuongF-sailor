@@ -1,0 +1,198 @@
+
+
+
+.myBtn {
+    display: inline-block;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.myBtn--red {
+    font-size: 14px;
+    color: #fff;
+    background-color: $redColor;
+    padding: 8px 30px;
+    &:hover {
+        background-color: $lightRedColor;
+        color: #fff;
+    }
+}
+
+// btn go top
+
+.myBtn--go-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99999;
+    width: 40px;
+    height: 40px;
+    background-color: $redColor;
+    text-align: center;
+    visibility: hidden;
+    transition: 0.4s;
+    i {
+        display: inline;
+        font-size: 24px;
+        line-height: 40px;
+        color:#fff;
+    }
+    &:hover {
+        background-color: $lightRedColor;
+    }
+}
+.myBtn--go-top-show {
+    visibility: visible;
+}
+// btn social
+.myBtn--social {
+    background-color: rgba(255, 255, 255, 0.1);
+    @include size(36px);
+    i {
+        color: #fff;
+        font-size: 18px;
+        display: block;
+        text-align: center;
+        line-height: 36px;
+
+    }
+    &:hover {
+        background-color: $redColor;
+    }
+}
+
+// btn team social
+.myBtn-team--social {
+    background-color: #8795a4;
+    @include size(32px);
+    i {
+        color: #fff;
+        font-size: 16px;
+        display: block;
+        text-align: center;
+        line-height: 32px;
+
+    }
+    &:hover {
+        background-color: $redColor;
+    }
+}
+
+
+// btn buy now
+.myBtn--buy {
+    padding: 8px 35px;
+}
+// Btn contact
+.myBtn--contact {
+    padding:10px 24px ;
+}
+
+// Btn number 
+
+.myBtn--number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 39px;
+    border: 1px solid #edeff1;
+    color: #aaa;
+    transition: 0.3s;
+    font-weight: 500;
+    font-size: 14px;
+    i {
+        display: block;
+        line-height: 39px;
+        font-size: 16px;
+        font-weight: 600;
+
+    }
+    &:hover {
+        background-color: $redColor;
+        color: #fff;
+        border-color: $redColor;
+    }
+}
+.myBtn--number-active {
+    background-color: $redColor;
+    color: #fff;
+    border-color: $redColor;
+}
+
+// Btn post comment
+.myBtn--gray {
+    background-color: $lightBlackColor;
+    font-size: 14px;
+    color: #fff;
+    padding: 8px 30px;
+    &:hover {
+        background-color: $redColor;
+        color: #fff;
+    }
+}
+
+.myBtn--post {
+    padding: 10px 20px;
+}
+// btn read more
+
+.myBtn--read-more {
+    padding: 6px 20px 7px;
+}
+
+
+// Btn tag
+
+.myBtn--tag {
+    border: 1px solid #dee2e6;
+    color: #96a2af;
+    font-size: 14px;
+    padding: 6px 14px;
+    &:hover {
+        color: #fff;
+        background-color: $redColor;
+        border-color: $redColor;
+
+    }
+}
+
+
+
+// hero slide btn
+
+.hero__slide-btn {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transition: 0.3s;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.3);
+    z-index: 101;
+    i {
+        font-size: 220%;
+        display: block;
+        line-height: 54px;
+        text-align: center;
+        
+
+    }
+    &:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.8);
+
+    }
+
+}
+
+.hero__slide-btn--left {
+    left: 15px;
+}
+
+
+.hero__slide-btn--right {
+    right: 15px;
+}

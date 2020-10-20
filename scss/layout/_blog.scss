@@ -1,0 +1,104 @@
+
+
+
+.blog-area {
+    padding: 60px 0;
+
+
+    .blog-items {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 60px;
+        @include maxWidth(992px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include maxWidth(768px) {
+            grid-template-columns: 1fr;   
+        }
+        .blog-item {
+            position: relative;
+            padding: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            &__img {
+                margin: -20px;
+                margin-bottom: 0;
+                img {
+                    width: 100%;
+                    vertical-align: middle;
+                }
+            }
+            &__title {
+                margin:  20px 0;
+                h4 {
+                    font-size: 18px;
+                    line-height: 26px;
+                    font-weight: bold;
+                    a {
+                        color: $lightBlackColor;
+                        transition: 0.3s;
+                        &:hover {
+                            color: $redColor;
+                        }
+                    }
+                }
+            }
+            &__time {
+                margin-bottom: 20px;
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    li {
+                        font-size: 14px;
+                        line-height: 1;
+                        
+                        i {
+                            color: #a4afba;
+                            margin-right: 2px;
+                            transform: translateY(2px);
+                            
+                        }
+                        .bxs-user {
+                            transform: translateY(1px);
+
+                        }
+                        a {
+                            color: #a4afba;
+                        }
+                        &:nth-child(1) {
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+            &__text {
+                height: 220px;
+                overflow-y: auto;
+                // margin-bottom: 120px;
+                p {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+            &__btn {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                text-align: right;
+            }
+        }
+    }
+
+    .blog-pagination {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        a {
+            margin: 0 5px;
+        }
+    }
+}

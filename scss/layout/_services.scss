@@ -1,0 +1,51 @@
+
+
+.services-area {
+    padding: 60px 0;
+
+    .services__main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 20px;
+        @include maxWidth(768px) {
+            grid-template-columns: 1fr;
+        }
+        .services-item {
+            padding: 30px 30px 30px 100px;
+            background-color: #F8F9FA;
+            border-radius: 6px;
+            position: relative;
+            &__icon {
+                color: $redColor;
+                position: absolute;
+                top: 30px;
+                left: 30px;
+                svg {
+                    font-size: 34px;
+                }
+            }
+
+            &__content {
+                h4 {
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                    font-weight: 700;
+                    a {
+                        color: $lightBlackColor;
+                        transition: 0.3s;
+                        &:hover {
+                            color: $redColor;
+                        }
+                    }
+                }
+                p {
+                    line-height: 24px;
+                    font-size: 14px;
+                    margin-bottom: 0;
+                }
+            }
+
+        }
+    }
+}

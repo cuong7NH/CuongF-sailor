@@ -1,0 +1,41 @@
+
+
+
+
+.section__title {
+    margin-bottom: 40px;
+    h4 {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0;
+        line-height: 1px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #aaaaaa;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 5px;
+        position: relative;
+        display: inline-block;
+        padding-right: 10px;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 120px;
+            height: 0.5px;
+            background-color: #e6636a;
+            top: 0;
+            left: 100%;
+        }
+    }
+
+
+    h2 {
+        font-size: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        color: $lightBlackColor;
+        // line-height: 60px;
+    }
+
+}

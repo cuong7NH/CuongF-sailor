@@ -1,0 +1,95 @@
+
+
+
+
+.pricing-area {
+    padding: 60px 0;
+
+
+}
+
+.pricing-table {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    &__head {
+        padding: 20px;
+        background-color: #F8F8F8;
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #777;
+
+        }
+    }
+
+    &__body {
+        padding: 20px;
+        .pricing-price {
+            h4 {
+                font-size: 36px;
+                color: $redColor;
+                font-family: "Poppins", sans-serif;
+                position: relative;
+                display: inline-block;
+                padding-bottom: 20px;
+                sup {
+                    font-size: 20px;
+                    position: absolute;
+                    font-weight: 600;
+                    top: 10px;
+                    left: -15px;
+                }
+                small {
+                    color: #bababa;
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+            }
+        }
+        ul {
+            li {
+                line-height: 20px;
+                margin-bottom: 16px;
+                font-size: 14px;
+                font-weight: normal;
+            }
+            li.line-through {
+                color: #ccc;
+                text-decoration: line-through;
+            }
+        }
+    }
+
+    &__foot {
+        padding: 20px;
+        background-color: #f8f8f8;
+    }
+}
+
+.pricing-table--popular {
+    .pricing-table__head {
+        background-color: $redColor;
+        h3 {
+            color:#fff;
+        }
+    }
+
+}
+
+.pricing-table--advanced {
+    position: relative;
+    .advanced {
+        background-color: $redColor;
+        color: #fff;
+        line-height: 24px;
+        font-size: 14px;
+        position: absolute;
+        min-width: 170px;
+        transform: rotate(45deg);
+        top: 20px;
+        right: -50px;
+    }
+}
