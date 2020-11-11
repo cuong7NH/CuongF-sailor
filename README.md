@@ -12,3 +12,6 @@ Bootstrap,
 Sass,
 Bem,
 Thư viện isotope
+
+Preview:
+https://nguyencuong2712.github.io/CuongF-sailor/html/home.html
